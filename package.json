@@ -1,0 +1,31 @@
+{
+  "name": "basicreactsetup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.jsx",
+  "scripts": {
+    "start":"npm run build",
+    "build":"webpack -d && cp src/index.html src/dist/index.html && webpack-dev-server --content-base src/dist --inline --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KavithaVikas/basicreactsetup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KavithaVikas/basicreactsetup/issues"
+  },
+  "homepage": "https://github.com/KavithaVikas/basicreactsetup#readme",
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "webpack": "^2.7.0",
+    "webpack-dev-server": "^2.7.1"
+  }
+}
